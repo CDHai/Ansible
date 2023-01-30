@@ -15,4 +15,11 @@
     apt:
       update_cache: yes
     when: ansible_distribution == "Ubuntu"
-  
+
+- hosts: all
+  become: true
+  roles:
+   - create_users
+   - disable_ssh
+   - sudo_permission
+   - add_pubkey
