@@ -1,5 +1,5 @@
 - name: Add auth key
   authorized_key:
-    user: cowhai
+    user: "{{user}}"
     key: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDYh9ONMlkDx1HtuquoNM3WA0vwkrRRTT2P1D8gyQ8M/0LmenCV1gya28fSlls5cvF1PCfquqmdQnWG6hfN0pmmtDHPuC/vmjjG8OSHSPmsDYLn5LCzCjxreBriGY9sbujDOyfG3D9IkpXwKQMzVeVWaFwaOmxhN1LlLFSfvLdldJiKPoxaieXKxIJnmLHKZ9b6ZbAc/I4XPtRznpT0jNteeDaqcEjcAX+FCNwZ+XgQeBmu+eGGpT94m53CCJ6+RUcxfIUrzAIalR9nqmhzpPGr2vxwTmiu5fdf2E8IcEevIVRlC/Vp8SDx1NxzX3dLDevzWEQiTWwhVj2BDcYJXQJhqpTJz+eODDzvtiVkIK6F/GU4nTTOqIiqnbh5ycN9cvEHjoMJ/chWZ+HUujRpDSirtdpV9DzyqIcuM5KGfUm+aVIW1K+NoarscF7+R1oNtoCZsCdRvvHcmWEoa5WNYKBHZrr8s1dKMTZX1d/clSERzB1iq4XzHByTIvJtpLFTYi8= ansible'
 
