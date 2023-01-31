@@ -1,0 +1,4 @@
+- name: Add user to sudoer
+  user:
+    name: "{{user}}"
+    groups: "{{group}}"

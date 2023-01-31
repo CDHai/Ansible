@@ -1,1 +1,4 @@
-
+- name: Create new user
+  user: 
+    name: "{{user}}"
+    state: present
