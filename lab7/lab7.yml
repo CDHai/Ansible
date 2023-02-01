@@ -22,4 +22,4 @@
   roles:
 
     - install_dhcp
-    - config_dhcp 
+    - config_dns
