@@ -1,0 +1,25 @@
+---
+
+
+- hosts: all
+  become: true
+  pre_tasks:
+  
+  - name: Update repository index ( CentOS )
+    tags: always
+    dnf: 
+      update_cache: yes
+    when: ansible_distribution == "CentOS"
+
+  - name: Update repository index ( Ubuntu )
+    tags: always 
+    apt:
+      update_cache: yes
+    when: ansible_distribution == "Ubuntu"
+
+- hosts: all
+  become: true
+  roles:
+
+    - install_dhcp
+    - config_dhcp 
