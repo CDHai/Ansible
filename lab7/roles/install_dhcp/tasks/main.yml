@@ -1,0 +1,6 @@
+- name: Install DHCP Server
+  package:
+    name: 
+      - "{{ dhcp_package }}"
+    state: latest
+ 
