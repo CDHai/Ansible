@@ -8,7 +8,7 @@ Write Roles Ansible:
 - Grant `sudo` permission for user.
 - Add Authorized Key for user ssh by `ssh-key`. 
 ### 6.2, Labbing
-* Source: Clone above
+* Source: Clone above.
 * Result:
 ![image](https://user-images.githubusercontent.com/88284121/215699659-d41f64bd-c633-4480-a712-27b80dff52ae.png)
 * Checking:
@@ -28,5 +28,14 @@ Write Roles Ansible:
 ![image](https://user-images.githubusercontent.com/88284121/215701558-faf4bf25-4519-4a6e-aa47-4a82b764bd87.png)
 ![image](https://user-images.githubusercontent.com/88284121/215701629-ae16b035-7a17-43e4-b498-3607e475b9db.png)
 
-
+## Lab 7
+### 7.1, Requirements
+Write Roles Ansible:
+- Install **DHCP Server** (Both `Ubuntu` & `CentOS`).
+- Config **DNS** for domains:
+   + test1.com - 1.2.3.4
+   + test2.com - 1.2.3.4
+### 7.2, Labbing
+* Source: Clone above.
+* Result:
  
