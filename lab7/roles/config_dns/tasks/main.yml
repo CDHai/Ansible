@@ -1,0 +1,11 @@
+- name: Install DNS Server
+  tags: dns
+  package:
+    name: 
+      - "{{ dns_package }}"
+    state: latest
+
+- name: Config DNS Server (UBUNTU)
+  tags: dns
+  template:
+    src: " 	

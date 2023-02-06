@@ -1,1 +1,5 @@
 dhcp_package: dhcp
+dns_package: bind
+domain_dns: test2.com
+ip_dns: 1.2.3.4
+
