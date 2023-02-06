@@ -8,4 +8,19 @@
 - name: Config DNS Server (UBUNTU)
   tags: dns
   template:
-    src: " 	
+    src: "{{ dns_template_file }}"
+    dest: /etc/bind/named.conf.local
+    owner: root
+    group: root
+  notify: restart_dns
+  when: ansible_distribution == "Ubuntu"
+
+- name: Config DNS Server (CENTOS)
+  tags: dns
+  template:
+    src: "{{ dns_template_file }}"
+    dest: /etc/resolv.conf    
+    owner: root
+    group: root
+  notify: restart_dns   
+  when: ansible_distribution == "CentOS" 	

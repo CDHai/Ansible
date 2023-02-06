@@ -1,0 +1,11 @@
+- name: restart_dns
+  service:
+    name: bind9
+    state: restarted
+  when: ansible_distribution == "Ubuntu"
+
+- name: restart_dns
+  service:
+    name: bind
+    state: restarted
+  when: ansible_distribution == "CentOS"

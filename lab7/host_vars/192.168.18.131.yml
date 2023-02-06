@@ -2,4 +2,4 @@ dhcp_package: dhcp
 dns_package: bind
 domain_dns: test2.com
 ip_dns: 1.2.3.4
-
+dns_template_file: dns_config_centos.j2
