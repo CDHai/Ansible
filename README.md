@@ -41,7 +41,7 @@ Write Roles Ansible:
 ![image](https://user-images.githubusercontent.com/88284121/216885924-daf188a6-ea88-4749-bf82-b92011d9c3d0.png)
 * Checking:
 ##### 1. Install **DHCP Server** (Both `Ubuntu` & `CentOS`)
-![image](https://user-images.githubusercontent.com/88284121/216887999-ae79d448-ba00-4b79-8190-d665cd47cdc7.png)
+![image](https://user-images.githubusercontent.com/88284121/219608722-ee57c075-8cb8-4a98-ae5f-3a5713d0c100.png)
 ![image](https://user-images.githubusercontent.com/88284121/216887772-26b42888-5096-4004-bcc6-a6774ee6686c.png)
 ##### 2. Config **DNS** for domains:
 * **Ubuntu**:
