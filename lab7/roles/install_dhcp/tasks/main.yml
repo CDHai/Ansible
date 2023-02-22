@@ -4,7 +4,7 @@
       - "{{ dhcp_package }}"
     state: latest
 
-- name: Config DHCP Server
+- name: Config DHCP Server (Ubuntu)
   become: yes
   template:
     src: "{{ dhcp_template_file }}"
@@ -13,3 +13,13 @@
     group: root
   notify: Restart DHCP
   when: ansible_distribution == "Ubuntu"
+
+- name: Config DHCP Server (CentOS)
+  become: yes
+  template:
+    src: "{{ dhcp_template_file }}"
+    dest: /etc/dhcp/dhcpd.conf
+    owner: root
+    group: root
+  notify: Restart DHCP 
+  when: ansible_distribution == "CentOS"

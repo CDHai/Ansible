@@ -3,4 +3,4 @@ dns_package: bind9
 domain_dns: test1.com
 ip_dns: 1.2.3.4
 dns_template_file: dns_config_ubuntu.j2
-dhcp_template_file: dhcp.conf.j2
+dhcp_template_file: dhcp_config_ubuntu.j2
