@@ -1,7 +1,11 @@
 dhcp_package: dhcp
 dhcp_service: dhcpd
+
 dns_package: bind
+dns_service: named
+
 domain_dns: test2.com
 ip_dns: 1.2.3.4
+
 dns_template_file: dns_config_centos.j2
 dhcp_template_file: dhcp_config_centos.j2
