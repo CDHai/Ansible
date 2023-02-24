@@ -1,4 +1,5 @@
 dhcp_package: isc-dhcp-server
+dhcp_service: isc-dhcp-server
 dns_package: bind9
 domain_dns: test1.com
 ip_dns: 1.2.3.4

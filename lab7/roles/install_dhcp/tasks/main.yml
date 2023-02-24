@@ -3,6 +3,7 @@
     name: 
       - "{{ dhcp_package }}"
     state: latest
+  notify: Start DHCP
 
 - name: Config DHCP Server (Ubuntu)
   become: yes
